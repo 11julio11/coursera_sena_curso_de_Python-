@@ -28,7 +28,7 @@ colores = {
 
 # Clase para manejar la selección de colores
 class Colors:
-    def escoger(): 
+    def escoger(self): 
         elegir_color = input('Escoge un color (amarillo, azul, rojo, blanco): ').lower()
         
         # Validar si el color escogido está en el diccionario
@@ -41,5 +41,8 @@ class Colors:
         print("Color no encontrado, por favor escoge uno de la lista.")
         return None
 
-# Llamar a la función para probarla
-Colors.escoger()
+# Crear una instancia de la clase Colors
+color_selector = Colors()
+
+# Llamar al método escoger para probarlo
+color_selector.escoger()
